@@ -1,0 +1,24 @@
+# Github action for releasing the binaries
+name: test
+
+on:
+  workflow_dispatch:  
+
+jobs:
+  goreleaser:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Get changelog for release
+        id: changelog
+        uses: mindsers/changelog-reader-action@v2
+      
+      - name: Echo
+        run: |
+          echo ${changelog}
+        env:
+          changelog: ${{ steps.changelog.outputs.changes }}
