@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/outscale-dev/vscode-osc-viewer",
   "bugs": {
-      "url": "https://github.com/outscale-dev/vscode-osc-viewer/issues"
+    "url": "https://github.com/outscale-dev/vscode-osc-viewer/issues"
   },
   "engines": {
     "vscode": "^1.73.0"
@@ -187,6 +187,11 @@
         "command": "osc.teardownNet",
         "title": "%osc.teardownNet%",
         "category": "osc-viewer"
+      },
+      {
+        "command": "osc.showNetworkView",
+        "title": "showNetworkView",
+        "category": "osc-viewer"
       }
     ],
     "viewsContainers": {
@@ -278,6 +283,11 @@
           "group": "oscinteract@6"
         },
         {
+          "command": "osc.showNetworkView",
+          "when": "view == profile && viewItem =~ /netresourcenode/",
+          "group": "oscinteract@6"
+        },
+        {
           "command": "osc.showConsoleLogs",
           "when": "view == profile && viewItem == vmresourcenode",
           "group": "oscget@2"
@@ -364,13 +374,15 @@
     "sinon": "^14.0.1",
     "ts-mock-imports": "^1.3.8",
     "typescript": "^4.8.4",
+    "typescript-formatter": "^7.2.2",
     "vsce": "^2.8.0",
-    "vscode-extension-tester": "5.2.1",
-    "typescript-formatter": "^7.2.2"
+    "vscode-extension-tester": "5.2.1"
   },
   "dependencies": {
+    "@types/cytoscape": "^3.19.9",
     "@vscode/l10n": "^0.0.10",
     "cross-fetch": "^3.1.5",
+    "cytoscape": "^3.23.0",
     "outscale-api": "^0.6.0",
     "rxjs": "^7.5.7"
   }
