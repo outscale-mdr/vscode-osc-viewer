@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd" stroke="#000"
+    stroke-linecap="round" stroke-linejoin="miter" width="36" height="52" style="">
+    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"
+        style="" class="" />
+    <g class="currentLayer" style="">
+        <title>Layer 1</title>
+        <rect height="52" stroke="#ff9800" width="36" x="0" y="0" stroke-dasharray="5 6" rx="5"
+            id="svg_2" class="" />
+    </g>
+</svg>

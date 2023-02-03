@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" fill-rule="evenodd" stroke="#000"
+    stroke-linecap="round" stroke-linejoin="round" width="200" height="200"
+    version="1.1">
+    <rect id=" backgroundrect" width=" 100%" height=" 100%" x=" 0" y=" 0" fill=" none"
+        stroke=" none" />
+    <g class=" currentLayer" style="">
+        <title>Layer 1</title>
+        <g id=" svg_1" class="">
+            <rect height="100%" width="100%" x="0" y="0" id=" svg_3"
+                fill="#E6F2F8"
+                stroke=" #167FBA"
+                stroke-width="1" stroke-linejoin=" miter" />
+        </g>
+        <g stroke=" none" id=" svg_4" class="" fill="#EBF3E7">
+            <rect height="4%" width="9%" x="0" y="0" id=" svg_3"
+                fill="
+        #167FBA" stroke=" #167FBA"
+                stroke-width="0.5px" stroke-linejoin=" miter" />
+            <text x="1%" y="3%" font-size="5px" fill="#E2EDDE">Subnet</text>
+        </g>
+    </g>
+</svg>
